@@ -1,0 +1,37 @@
+body {
+    margin-top: 50px;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.navbar li {float: left;}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {background-color: #111;}
+
+ul.navbar li.right {
+    float: right;
+    background-color: rgb(64, 100, 57);
+}
+
+@media screen and (max-width: 600px) {
+    ul.navbar {position: static;}
+    ul.navbar li.right, 
+    ul.navbar li {float: none;}
+}
