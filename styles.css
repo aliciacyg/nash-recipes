@@ -1,6 +1,4 @@
-body {
-    margin-top: 50px;
-}
+/* navbar styling */
 
 ul.navbar {
   list-style-type: none;
@@ -8,7 +6,7 @@ ul.navbar {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -34,4 +32,34 @@ ul.navbar li.right {
     ul.navbar {position: static;}
     ul.navbar li.right, 
     ul.navbar li {float: none;}
+}
+
+/* recipes styling */
+.name {
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  padding: 14px 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.name:hover {
+  background-color: #ddd;
+}
+
+.recipe {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: #f9f9f9;
+  padding: 0 16px;
+}
+
+.recipe.open {
+  padding: 14px 16px;
 }
