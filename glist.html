@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+    <ul class="navbar" id="home">
+        <li><a href="index.html">Recipes</a></li>
+        <li class="right"><a href="glist.html">Grocery List</a></li>
+        <li class="right"><a href="dinners.html">Dinners</a></li>
+    </ul>
+    <h1>Dinner Spreads</h1>
     <ul id="grocery-list"></ul>
     <form id="grocery-form">
-        <input type="text" id="item-input" placeholder="What do you need?"/>
+        <input type="text" id="item-input" placeholder="What do you need?" />
         <button type="submit">Add</button>
     </form>
     <script src="script.js"></script>
 </body>
+
 </html>

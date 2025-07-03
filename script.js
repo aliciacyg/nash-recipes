@@ -42,9 +42,9 @@ form.addEventListener("submit", (e) => {
     span.classList.toggle("checked", checkbox.checked);
   });
   
-  list.appendChild(checkbox);
-  list.appendChild(span);
-
+  li.appendChild(checkbox);
+  li.appendChild(span);
+  list.appendChild(li);
   input.value = "";
   input.focus();
 })
